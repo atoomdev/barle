@@ -8,9 +8,9 @@ import { Calendar, Clock, MapPin, Users, Wine, Utensils, Music, Star } from "luc
 export default function HomePage() {
   return (
     <div className="pt-16">
-      {/* Hero Section */}
+      {/* Kahraman Bölümü */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background Image */}
+        {/* Arka Plan Görseli */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat gpu-accelerated"
           style={{
@@ -20,17 +20,16 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-black/50"></div>
         </div>
 
-        {/* Hero Content */}
+        {/* Kahraman İçeriği */}
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <Badge className="mb-6 bg-accent text-accent-foreground animate-fade-in-up hover-scale">
-            Premium Dining Experience
+            Premium Yemek Deneyimi
           </Badge>
           <h1 className="text-responsive-6xl font-bold mb-6 animate-fade-in-up-delay-1 text-balance">
-            Welcome to <span className="text-accent animate-parallax-float inline-block">Barle Pub</span>
+            <span className="text-accent animate-parallax-float inline-block">Barle Pub</span>'a Hoş Geldiniz
           </h1>
           <p className="text-responsive-2xl mb-8 text-white/90 animate-fade-in-up-delay-2 max-w-2xl mx-auto text-pretty">
-            Where tradition meets modern excellence. Experience exceptional cuisine, craft beverages, and unforgettable
-            moments in our elegant atmosphere.
+            Gelenekle modern mükemmeliyetin buluştuğu yer. Şık atmosferimizde eşsiz mutfak, el yapımı içecekler ve unutulmaz anlar yaşayın.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up-delay-3">
             <Button
@@ -38,7 +37,7 @@ export default function HomePage() {
               size="lg"
               className="bg-primary hover:bg-primary/90 text-primary-foreground btn-primary hover-lift"
             >
-              <Link href="/menu">Explore Our Menu</Link>
+              <Link href="/menu">Menümüzü Keşfedin</Link>
             </Button>
             <Button
               asChild
@@ -46,12 +45,12 @@ export default function HomePage() {
               variant="outline"
               className="border-white text-white hover:bg-white hover:text-primary hover-lift bg-transparent"
             >
-              <Link href="/reservation">Reserve Your Table</Link>
+              <Link href="/reservation">Masanızı Ayırtın</Link>
             </Button>
           </div>
         </div>
 
-        {/* Scroll Indicator */}
+        {/* Kaydırma Göstergesi */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-float">
           <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
             <div className="w-1 h-3 bg-white/50 rounded-full mt-2 animate-pulse"></div>
@@ -59,14 +58,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Özellikler Bölümü */}
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
             <div className="text-center mb-16">
-              <h2 className="text-responsive-4xl font-bold text-primary mb-4">Why Choose Barle Pub?</h2>
+              <h2 className="text-responsive-4xl font-bold text-primary mb-4">Neden Barle Pub'ı Seçmelisiniz?</h2>
               <p className="text-responsive-xl text-muted-foreground max-w-2xl mx-auto">
-                Discover what makes us the premier destination for exceptional dining and entertainment
+                Bizi olağanüstü yemek ve eğlence için birinci sınıf bir destinasyon yapan şeyleri keşfedin
               </p>
             </div>
           </ScrollReveal>
@@ -75,23 +74,23 @@ export default function HomePage() {
             {[
               {
                 icon: <Utensils className="h-8 w-8 text-accent" />,
-                title: "Exceptional Cuisine",
-                description: "Crafted with the finest ingredients and culinary expertise",
+                title: "Olağanüstü Mutfak",
+                description: "En kaliteli malzemeler ve mutfak uzmanlığıyla hazırlanmıştır",
               },
               {
                 icon: <Wine className="h-8 w-8 text-accent" />,
-                title: "Premium Beverages",
-                description: "Curated selection of wines, craft beers, and signature cocktails",
+                title: "Premium İçecekler",
+                description: "Şaraplar, el yapımı biralar ve imza kokteyllerinden oluşan seçkin bir koleksiyon",
               },
               {
                 icon: <Music className="h-8 w-8 text-accent" />,
-                title: "Live Entertainment",
-                description: "Regular live music and special events for memorable evenings",
+                title: "Canlı Eğlence",
+                description: "Unutulmaz akşamlar için düzenli canlı müzik ve özel etkinlikler",
               },
               {
                 icon: <Users className="h-8 w-8 text-accent" />,
-                title: "Warm Atmosphere",
-                description: "Perfect setting for intimate dinners and social gatherings",
+                title: "Sıcak Atmosfer",
+                description: "Samimi akşam yemekleri ve sosyal toplantılar için mükemmel ortam",
               },
             ].map((feature, index) => (
               <ScrollReveal key={index} delay={index * 100}>
@@ -110,21 +109,20 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Highlighted Sections */}
+      {/* Vurgulanan Bölümler */}
       <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Menu Highlight */}
+            {/* Menü Vurgusu */}
             <ScrollReveal>
               <div className="space-y-6">
-                <Badge className="bg-primary text-primary-foreground hover-scale">Our Menu</Badge>
-                <h3 className="text-responsive-4xl font-bold text-primary">Culinary Excellence</h3>
+                <Badge className="bg-primary text-primary-foreground hover-scale">Menümüz</Badge>
+                <h3 className="text-responsive-4xl font-bold text-primary">Mutfak Mükemmelliği</h3>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  From traditional pub favorites to innovative modern dishes, our menu showcases the best of both
-                  worlds. Each dish is carefully crafted using locally sourced ingredients and time-honored techniques.
+                  Geleneksel pub favorilerinden yenilikçi modern yemeklere kadar, menümüz her iki dünyanın en iyilerini sergiliyor. Her yemek, yerel kaynaklı malzemeler ve zamanla test edilmiş teknikler kullanılarak özenle hazırlanır.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-6">
-                  {["Signature Steaks", "Fresh Seafood", "Craft Burgers", "Vegetarian Options"].map((item, index) => (
+                  {["İmza Biftekler", "Taze Deniz Ürünleri", "El Yapımı Burgerler", "Vejetaryen Seçenekler"].map((item, index) => (
                     <Badge
                       key={item}
                       variant="outline"
@@ -136,7 +134,7 @@ export default function HomePage() {
                   ))}
                 </div>
                 <Button asChild className="bg-primary hover:bg-primary/90 btn-primary hover-lift">
-                  <Link href="/menu">View Full Menu</Link>
+                  <Link href="/menu">Tam Menüyü Görüntüle</Link>
                 </Button>
               </div>
             </ScrollReveal>
@@ -144,7 +142,7 @@ export default function HomePage() {
               <div className="relative hover-lift">
                 <img
                   src="/gourmet-pub-food-plating-with-elegant-presentation.png"
-                  alt="Gourmet pub cuisine"
+                  alt="Gurme pub mutfağı"
                   className="rounded-lg shadow-xl w-full h-[400px] object-cover gpu-accelerated"
                 />
               </div>
@@ -153,76 +151,74 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Events & About Preview */}
+      {/* Etkinlikler ve Hakkımızda Önizlemesi */}
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            {/* Events Card */}
+            {/* Etkinlikler Kartı */}
             <ScrollReveal>
               <Card className="card-interactive hover-lift gpu-accelerated">
                 <CardHeader>
                   <div className="flex items-center space-x-2 mb-2">
                     <Calendar className="h-6 w-6 text-accent" />
-                    <Badge className="bg-accent text-accent-foreground hover-scale">Upcoming Events</Badge>
+                    <Badge className="bg-accent text-accent-foreground hover-scale">Yaklaşan Etkinlikler</Badge>
                   </div>
-                  <CardTitle className="text-2xl">Live Music & Special Events</CardTitle>
+                  <CardTitle className="text-2xl">Canlı Müzik ve Özel Etkinlikler</CardTitle>
                   <CardDescription className="text-base">
-                    Join us for unforgettable evenings featuring live performances and special celebrations
+                    Canlı performanslar ve özel kutlamalarla unutulmaz akşamlar için bize katılın
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-center space-x-3 p-3 bg-muted/50 rounded-lg hover-lift">
                     <Music className="h-5 w-5 text-primary" />
                     <div>
-                      <p className="font-medium">Jazz Night</p>
-                      <p className="text-sm text-muted-foreground">Every Friday at 8 PM</p>
+                      <p className="font-medium">Caz Gecesi</p>
+                      <p className="text-sm text-muted-foreground">Her Cuma 20:00'de</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3 p-3 bg-muted/50 rounded-lg hover-lift">
                     <Star className="h-5 w-5 text-primary" />
                     <div>
-                      <p className="font-medium">Wine Tasting</p>
-                      <p className="text-sm text-muted-foreground">Monthly special events</p>
+                      <p className="font-medium">Şarap Tadımı</p>
+                      <p className="text-sm text-muted-foreground">Aylık özel etkinlikler</p>
                     </div>
                   </div>
                   <Button asChild variant="outline" className="w-full hover-lift bg-transparent">
-                    <Link href="/events">View All Events</Link>
+                    <Link href="/events">Tüm Etkinlikleri Görüntüle</Link>
                   </Button>
                 </CardContent>
               </Card>
             </ScrollReveal>
 
-            {/* About Card */}
+            {/* Hakkımızda Kartı */}
             <ScrollReveal delay={200}>
               <Card className="card-interactive hover-lift gpu-accelerated">
                 <CardHeader>
                   <div className="flex items-center space-x-2 mb-2">
                     <MapPin className="h-6 w-6 text-accent" />
-                    <Badge className="bg-primary text-primary-foreground hover-scale">Our Story</Badge>
+                    <Badge className="bg-primary text-primary-foreground hover-scale">Hikayemiz</Badge>
                   </div>
-                  <CardTitle className="text-2xl">About Barle Pub</CardTitle>
+                  <CardTitle className="text-2xl">Barle Pub Hakkında</CardTitle>
                   <CardDescription className="text-base">
-                    Discover the passion and dedication behind our exceptional dining experience
+                    Olağanüstü yemek deneyimimizin arkasındaki tutku ve adanmışlığı keşfedin
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-muted-foreground leading-relaxed">
-                    Founded with a vision to create the perfect gathering place, Barle Pub combines traditional
-                    hospitality with contemporary sophistication. Our commitment to quality and service has made us a
-                    beloved destination for food enthusiasts and social gatherings alike.
+                    Mükemmel bir buluşma yeri yaratma vizyonuyla kurulan Barle Pub, geleneksel misafirperverliği çağdaş bir zarafetle birleştiriyor. Kalite ve hizmete olan bağlılığımız, bizi yemek tutkunları ve sosyal toplantılar için sevilen bir destinasyon haline getirdi.
                   </p>
                   <div className="flex items-center space-x-4 text-sm text-muted-foreground">
                     <div className="flex items-center space-x-1">
                       <Clock className="h-4 w-4" />
-                      <span>Est. 2020</span>
+                      <span>2020'de Kuruldu</span>
                     </div>
                     <div className="flex items-center space-x-1">
                       <Users className="h-4 w-4" />
-                      <span>Family Owned</span>
+                      <span>Aile İşletmesi</span>
                     </div>
                   </div>
                   <Button asChild variant="outline" className="w-full hover-lift bg-transparent">
-                    <Link href="/about">Learn More About Us</Link>
+                    <Link href="/about">Hakkımızda Daha Fazla Bilgi Edinin</Link>
                   </Button>
                 </CardContent>
               </Card>
@@ -231,14 +227,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Call to Action */}
+      {/* Eylem Çağrısı */}
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
-            <h2 className="text-responsive-4xl font-bold mb-6">Ready for an Exceptional Experience?</h2>
+            <h2 className="text-responsive-4xl font-bold mb-6">Olağanüstü Bir Deneyime Hazır mısınız?</h2>
             <p className="text-responsive-xl mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
-              Join us at Barle Pub for an unforgettable dining experience. Reserve your table today and discover why
-              we're the premier destination for exceptional cuisine and hospitality.
+              Unutulmaz bir yemek deneyimi için Barle Pub'a katılın. Bugün masanızı ayırtın ve neden olağanüstü mutfak ve misafirperverlik için birinci sınıf bir destinasyon olduğumuzu keşfedin.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
@@ -247,7 +242,7 @@ export default function HomePage() {
                 variant="secondary"
                 className="bg-accent text-accent-foreground hover:bg-accent/90 btn-primary hover-lift"
               >
-                <Link href="/reservation">Make a Reservation</Link>
+                <Link href="/reservation">Rezervasyon Yapın</Link>
               </Button>
               <Button
                 asChild
@@ -255,7 +250,7 @@ export default function HomePage() {
                 variant="outline"
                 className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary bg-transparent hover-lift"
               >
-                <Link href="/contact">Contact Us</Link>
+                <Link href="/contact">Bize Ulaşın</Link>
               </Button>
             </div>
           </ScrollReveal>

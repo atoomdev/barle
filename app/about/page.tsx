@@ -11,13 +11,12 @@ export default function AboutPage() {
       <section className="relative py-20 bg-gradient-to-br from-primary/10 via-background to-accent/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <Badge className="mb-4 bg-accent text-accent-foreground animate-fade-in-up">Our Story</Badge>
+            <Badge className="mb-4 bg-accent text-accent-foreground animate-fade-in-up">Bizim Hikayemiz</Badge>
             <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6 animate-fade-in-up text-balance">
-              About Barle Pub
+              Barle Kitchen & Pub
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-fade-in-up text-pretty">
-              Where passion for exceptional cuisine meets the warmth of traditional hospitality, creating unforgettable
-              experiences for every guest.
+            Lezzet tutkusunun geleneksel misafirperverlikle buluştuğu, her misafire unutulmaz anlar yaşatan bir deneyim.
             </p>
           </div>
         </div>
@@ -29,20 +28,21 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 animate-slide-in-left">
               <h2 className="text-3xl font-bold text-primary">Our Journey</h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Founded in 2020 with a simple yet ambitious vision, Barle Pub was born from a desire to create more than
-                just a dining establishment. We envisioned a place where culinary excellence meets genuine hospitality,
-                where every meal becomes a memorable experience.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                What started as a dream between longtime friends has evolved into a beloved community gathering place.
-                Our commitment to sourcing the finest local ingredients, crafting exceptional dishes, and providing
-                warm, attentive service has made us a cornerstone of the local dining scene.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Today, Barle Pub stands as a testament to the power of passion, dedication, and the belief that great
-                food and genuine hospitality can bring people together in meaningful ways.
-              </p>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                2025 yılında basit ama iddialı bir vizyonla kurulan Barle Pub, sadece bir yemek mekanı yaratma arzusundan
+                doğdu. Aşçılık mükemmeliyetinin samimi misafirperverlikle buluştuğu, her yemeğin unutulmaz bir deneyime
+                dönüştüğü bir yer hayal ettik.
+                </p>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                Uzun zamandır arkadaş olan birkaç kişinin hayali olarak başlayan bu yolculuk, sevilen bir topluluk
+                buluşma noktasına dönüştü. En kaliteli yerel malzemeleri temin etme, olağanüstü yemekler hazırlama ve
+                sıcak, özenli hizmet sunma konusundaki bağlılığımız, bizi yerel yemek sahnesinin temel taşlarından biri
+                haline getirdi.
+                </p>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                Bugün, Barle Pub, tutkunun, adanmışlığın ve harika yemeklerin ve samimi misafirperverliğin insanları
+                anlamlı şekillerde bir araya getirebileceğine olan inancın bir kanıtı olarak duruyor.
+                </p>
             </div>
             <div className="relative">
               <img
@@ -58,45 +58,45 @@ export default function AboutPage() {
       {/* Mission & Values */}
       <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-primary mb-4">Our Mission & Values</h2>
+            <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-primary mb-4">Misyonumuz ve Değerlerimiz</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              The principles that guide everything we do at Barle Pub
+              Barle Pub'da yaptığımız her şeyi yönlendiren ilkeler
             </p>
-          </div>
+            </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                icon: <Heart className="h-8 w-8 text-accent" />,
-                title: "Passion for Excellence",
-                description:
-                  "Every dish, every drink, every interaction is crafted with genuine care and attention to detail.",
+              icon: <Heart className="h-8 w-8 text-accent" />,
+              title: "Mükemmellik Tutkusu",
+              description:
+                "Her yemek, her içecek, her etkileşim gerçek bir özen ve dikkatle hazırlanır.",
               },
               {
-                icon: <Users className="h-8 w-8 text-accent" />,
-                title: "Community First",
-                description: "We're more than a restaurant - we're a gathering place that brings people together.",
+              icon: <Users className="h-8 w-8 text-accent" />,
+              title: "Önce Topluluk",
+              description: "Biz sadece bir restoran değiliz - insanları bir araya getiren bir buluşma noktasıyız.",
               },
               {
-                icon: <Award className="h-8 w-8 text-accent" />,
-                title: "Quality Without Compromise",
-                description: "From ingredients to service, we never settle for anything less than exceptional.",
+              icon: <Award className="h-8 w-8 text-accent" />,
+              title: "Tavizsiz Kalite",
+              description: "Malzemelerden hizmete kadar, asla mükemmelin altında bir şeyle yetinmeyiz.",
               },
               {
-                icon: <ChefHat className="h-8 w-8 text-accent" />,
-                title: "Culinary Innovation",
-                description: "Blending traditional techniques with creative flair to surprise and delight.",
+              icon: <ChefHat className="h-8 w-8 text-accent" />,
+              title: "Gastronomik Yenilik",
+              description: "Geleneksel teknikleri yaratıcı bir dokunuşla harmanlayarak şaşırtıcı ve keyifli deneyimler sunarız.",
               },
               {
-                icon: <Wine className="h-8 w-8 text-accent" />,
-                title: "Curated Experiences",
-                description: "Every element is thoughtfully selected to create memorable dining experiences.",
+              icon: <Wine className="h-8 w-8 text-accent" />,
+              title: "Özenle Hazırlanmış Deneyimler",
+              description: "Her öğe, unutulmaz yemek deneyimleri yaratmak için özenle seçilir.",
               },
               {
-                icon: <Clock className="h-8 w-8 text-accent" />,
-                title: "Timeless Hospitality",
-                description: "Warm, genuine service that makes every guest feel like family.",
+              icon: <Clock className="h-8 w-8 text-accent" />,
+              title: "Zamansız Misafirperverlik",
+              description: "Her misafiri aileden biri gibi hissettiren sıcak ve samimi bir hizmet.",
               },
             ].map((value, index) => (
               <Card
@@ -172,18 +172,18 @@ export default function AboutPage() {
       {/* Call to Action */}
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold mb-6">Experience the Barle Pub Difference</h2>
-          <p className="text-xl mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
-            Join us for an exceptional dining experience where every detail is crafted with care and passion.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <h2 className="text-4xl font-bold mb-6">Barle Pub Farkını Deneyimleyin</h2>
+            <p className="text-xl mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
+            Her detayın özen ve tutkuyla hazırlandığı eşsiz bir yemek deneyimi için bize katılın.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               asChild
               size="lg"
               variant="secondary"
               className="bg-accent text-accent-foreground hover:bg-accent/90"
             >
-              <Link href="/reservation">Make a Reservation</Link>
+              <Link href="/reservation">Rezervasyon Yap</Link>
             </Button>
             <Button
               asChild
@@ -191,7 +191,7 @@ export default function AboutPage() {
               variant="outline"
               className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary bg-transparent"
             >
-              <Link href="/menu">View Our Menu</Link>
+              <Link href="/menu">Menümüzü Görüntüle</Link>
             </Button>
           </div>
         </div>

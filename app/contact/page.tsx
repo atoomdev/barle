@@ -45,33 +45,33 @@ export default function ContactPage() {
 
   return (
     <div className="pt-16">
-      {/* Hero Section */}
+      {/* Kahraman Bölümü */}
       <section className="relative py-20 bg-gradient-to-br from-primary/10 via-background to-accent/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <Badge className="mb-4 bg-accent text-accent-foreground animate-fade-in-up">Get In Touch</Badge>
+            <Badge className="mb-4 bg-accent text-accent-foreground animate-fade-in-up">İletişime Geçin</Badge>
             <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6 animate-fade-in-up text-balance">
-              Contact Us
+              Bize Ulaşın
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-fade-in-up text-pretty">
-              We'd love to hear from you. Whether you have questions, feedback, or want to plan a special event, our
-              team is here to help.
+              Sizi duymaktan mutluluk duyarız. Sorularınız, geri bildirimleriniz veya özel bir etkinlik planlamak
+              istiyorsanız, ekibimiz size yardımcı olmaya hazır.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Contact Information & Form */}
+      {/* İletişim Bilgileri ve Form */}
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Contact Information */}
+            {/* İletişim Bilgileri */}
             <div className="space-y-8">
               <div>
-                <h2 className="text-3xl font-bold text-primary mb-6">Visit Us</h2>
+                <h2 className="text-3xl font-bold text-primary mb-6">Bizi Ziyaret Edin</h2>
                 <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                  Located in the heart of the city, Barle Pub is easily accessible and offers a warm, welcoming
-                  atmosphere for all occasions.
+                  Şehrin kalbinde yer alan Barle Pub, kolayca erişilebilir ve tüm etkinlikler için sıcak, samimi bir
+                  atmosfer sunar.
                 </p>
               </div>
 
@@ -82,16 +82,16 @@ export default function ContactPage() {
                       <div className="p-2 bg-primary/10 rounded-full">
                         <MapPin className="h-6 w-6 text-primary" />
                       </div>
-                      <CardTitle className="text-xl">Address</CardTitle>
+                      <CardTitle className="text-xl">Adres</CardTitle>
                     </div>
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground leading-relaxed">
-                      123 Main Street
+                      123 Ana Cadde
                       <br />
-                      Downtown District
+                      Şehir Merkezi Bölgesi
                       <br />
-                      City, State 12345
+                      Şehir, Eyalet 12345
                     </p>
                   </CardContent>
                 </Card>
@@ -102,7 +102,7 @@ export default function ContactPage() {
                       <div className="p-2 bg-primary/10 rounded-full">
                         <Phone className="h-6 w-6 text-primary" />
                       </div>
-                      <CardTitle className="text-xl">Phone</CardTitle>
+                      <CardTitle className="text-xl">Telefon</CardTitle>
                     </div>
                   </CardHeader>
                   <CardContent>
@@ -111,7 +111,7 @@ export default function ContactPage() {
                         +1 (555) 123-4567
                       </a>
                     </p>
-                    <p className="text-sm text-muted-foreground mt-2">Available during business hours</p>
+                    <p className="text-sm text-muted-foreground mt-2">Çalışma saatlerinde ulaşılabilir</p>
                   </CardContent>
                 </Card>
 
@@ -121,7 +121,7 @@ export default function ContactPage() {
                       <div className="p-2 bg-primary/10 rounded-full">
                         <Mail className="h-6 w-6 text-primary" />
                       </div>
-                      <CardTitle className="text-xl">Email</CardTitle>
+                      <CardTitle className="text-xl">E-posta</CardTitle>
                     </div>
                   </CardHeader>
                   <CardContent>
@@ -130,7 +130,7 @@ export default function ContactPage() {
                         info@barlepub.com
                       </a>
                     </p>
-                    <p className="text-sm text-muted-foreground mt-2">We'll respond within 24 hours</p>
+                    <p className="text-sm text-muted-foreground mt-2">24 saat içinde yanıt vereceğiz</p>
                   </CardContent>
                 </Card>
 
@@ -140,22 +140,22 @@ export default function ContactPage() {
                       <div className="p-2 bg-primary/10 rounded-full">
                         <Clock className="h-6 w-6 text-primary" />
                       </div>
-                      <CardTitle className="text-xl">Hours</CardTitle>
+                      <CardTitle className="text-xl">Çalışma Saatleri</CardTitle>
                     </div>
                   </CardHeader>
                   <CardContent>
                     <div className="space-y-1 text-sm text-muted-foreground">
                       <div className="flex justify-between">
-                        <span>Mon - Thu</span>
-                        <span>4:00 PM - 12:00 AM</span>
+                        <span>Pzt - Per</span>
+                        <span>16:00 - 00:00</span>
                       </div>
                       <div className="flex justify-between">
-                        <span>Fri - Sat</span>
-                        <span>4:00 PM - 2:00 AM</span>
+                        <span>Cuma - Cts</span>
+                        <span>16:00 - 02:00</span>
                       </div>
                       <div className="flex justify-between">
-                        <span>Sunday</span>
-                        <span>2:00 PM - 11:00 PM</span>
+                        <span>Pazar</span>
+                        <span>14:00 - 23:00</span>
                       </div>
                     </div>
                   </CardContent>
@@ -163,13 +163,13 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* Contact Form */}
+            {/* İletişim Formu */}
             <div>
               <Card className="shadow-lg">
                 <CardHeader>
-                  <CardTitle className="text-2xl">Send Us a Message</CardTitle>
+                  <CardTitle className="text-2xl">Bize Bir Mesaj Gönderin</CardTitle>
                   <CardDescription>
-                    Have a question or want to share feedback? We'd love to hear from you.
+                    Bir sorunuz mu var veya geri bildirimde mi bulunmak istiyorsunuz? Sizi duymaktan mutluluk duyarız.
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -177,60 +177,60 @@ export default function ContactPage() {
                     <Alert className="border-green-200 bg-green-50">
                       <CheckCircle className="h-4 w-4 text-green-600" />
                       <AlertDescription className="text-green-800">
-                        Thank you for your message! We'll get back to you within 24 hours.
+                        Mesajınız için teşekkür ederiz! Size 24 saat içinde geri dönüş yapacağız.
                       </AlertDescription>
                     </Alert>
                   ) : (
                     <form onSubmit={handleSubmit} className="space-y-6">
                       <div className="space-y-2">
-                        <Label htmlFor="name">Full Name *</Label>
+                        <Label htmlFor="name">Ad Soyad *</Label>
                         <Input
                           id="name"
                           value={formData.name}
                           onChange={(e) => handleInputChange("name", e.target.value)}
                           required
-                          placeholder="Enter your full name"
+                          placeholder="Adınızı ve soyadınızı girin"
                         />
                       </div>
 
                       <div className="space-y-2">
-                        <Label htmlFor="email">Email Address *</Label>
+                        <Label htmlFor="email">E-posta Adresi *</Label>
                         <Input
                           id="email"
                           type="email"
                           value={formData.email}
                           onChange={(e) => handleInputChange("email", e.target.value)}
                           required
-                          placeholder="your.email@example.com"
+                          placeholder="ornek.email@domain.com"
                         />
                       </div>
 
                       <div className="space-y-2">
-                        <Label htmlFor="subject">Subject *</Label>
+                        <Label htmlFor="subject">Konu *</Label>
                         <Input
                           id="subject"
                           value={formData.subject}
                           onChange={(e) => handleInputChange("subject", e.target.value)}
                           required
-                          placeholder="What is this regarding?"
+                          placeholder="Bu konu ne hakkında?"
                         />
                       </div>
 
                       <div className="space-y-2">
-                        <Label htmlFor="message">Message *</Label>
+                        <Label htmlFor="message">Mesaj *</Label>
                         <Textarea
                           id="message"
                           value={formData.message}
                           onChange={(e) => handleInputChange("message", e.target.value)}
                           required
-                          placeholder="Tell us more about your inquiry..."
+                          placeholder="Sorgunuz hakkında daha fazla bilgi verin..."
                           rows={5}
                         />
                       </div>
 
                       <Button type="submit" className="w-full bg-primary hover:bg-primary/90" disabled={isLoading}>
                         <Send className="h-4 w-4 mr-2" />
-                        {isLoading ? "Sending Message..." : "Send Message"}
+                        {isLoading ? "Mesaj Gönderiliyor..." : "Mesaj Gönder"}
                       </Button>
                     </form>
                   )}
@@ -241,26 +241,26 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Map Section */}
+      {/* Harita Bölümü */}
       <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-primary mb-4">Find Us</h2>
+            <h2 className="text-4xl font-bold text-primary mb-4">Bizi Bulun</h2>
             <p className="text-xl text-muted-foreground">
-              Located in the heart of downtown, easy to reach by car or public transport
+              Şehir merkezinin kalbinde, araba veya toplu taşıma ile kolayca ulaşılabilir
             </p>
           </div>
 
           <div className="relative rounded-lg overflow-hidden shadow-xl">
-            {/* Placeholder for Google Maps - In a real implementation, you'd integrate with Google Maps API */}
+            {/* Google Haritalar için Yer Tutucu - Gerçek bir uygulamada, Google Haritalar API'si ile entegre edersiniz */}
             <div className="bg-muted h-96 flex items-center justify-center">
               <div className="text-center space-y-4">
                 <MapPin className="h-12 w-12 text-primary mx-auto" />
                 <div>
-                  <h3 className="text-xl font-semibold text-primary">Interactive Map</h3>
-                  <p className="text-muted-foreground">Google Maps integration would be implemented here</p>
+                  <h3 className="text-xl font-semibold text-primary">Etkileşimli Harita</h3>
+                  <p className="text-muted-foreground">Google Haritalar entegrasyonu burada uygulanacaktır</p>
                   <p className="text-sm text-muted-foreground mt-2">
-                    123 Main Street, Downtown District, City, State 12345
+                    123 Ana Cadde, Şehir Merkezi Bölgesi, Şehir, Eyalet 12345
                   </p>
                 </div>
                 <Button variant="outline" asChild>
@@ -269,7 +269,7 @@ export default function ContactPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Open in Google Maps
+                    Google Haritalar'da Aç
                   </a>
                 </Button>
               </div>
@@ -278,48 +278,48 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Additional Information */}
+      {/* Ek Bilgiler */}
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="text-center hover:shadow-lg transition-shadow duration-300">
               <CardHeader>
-                <CardTitle className="text-xl">Private Events</CardTitle>
+                <CardTitle className="text-xl">Özel Etkinlikler</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  Planning a special celebration? We offer private dining options for groups of all sizes.
+                  Özel bir kutlama mı planlıyorsunuz? Her boyutta grup için özel yemek seçenekleri sunuyoruz.
                 </p>
                 <Button variant="outline" asChild>
-                  <a href="mailto:events@barlepub.com">Contact Events Team</a>
+                  <a href="mailto:events@barlepub.com">Etkinlik Ekibiyle İletişime Geçin</a>
                 </Button>
               </CardContent>
             </Card>
 
             <Card className="text-center hover:shadow-lg transition-shadow duration-300">
               <CardHeader>
-                <CardTitle className="text-xl">Catering Services</CardTitle>
+                <CardTitle className="text-xl">Catering Hizmetleri</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  Bring Barle Pub's exceptional cuisine to your location with our catering services.
+                  Barle Pub'ın mükemmel mutfağını catering hizmetlerimizle mekanınıza getirin.
                 </p>
                 <Button variant="outline" asChild>
-                  <a href="mailto:catering@barlepub.com">Catering Inquiries</a>
+                  <a href="mailto:catering@barlepub.com">Catering Sorguları</a>
                 </Button>
               </CardContent>
             </Card>
 
             <Card className="text-center hover:shadow-lg transition-shadow duration-300">
               <CardHeader>
-                <CardTitle className="text-xl">Gift Cards</CardTitle>
+                <CardTitle className="text-xl">Hediye Kartları</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  Give the gift of exceptional dining with Barle Pub gift cards, perfect for any occasion.
+                  Barle Pub hediye kartları ile mükemmel bir yemek deneyimi hediye edin, her durum için mükemmel.
                 </p>
                 <Button variant="outline" asChild>
-                  <a href="mailto:info@barlepub.com?subject=Gift Card Inquiry">Purchase Gift Cards</a>
+                  <a href="mailto:info@barlepub.com?subject=Gift Card Inquiry">Hediye Kartları Satın Al</a>
                 </Button>
               </CardContent>
             </Card>
@@ -327,13 +327,12 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Call to Action */}
+      {/* Eylem Çağrısı */}
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold mb-6">Ready to Experience Barle Pub?</h2>
+          <h2 className="text-4xl font-bold mb-6">Barle Pub'ı Denemeye Hazır mısınız?</h2>
           <p className="text-xl mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
-            Whether you're planning a special night out or just want to enjoy great food and drinks, we're here to make
-            it memorable.
+            İster özel bir gece planlıyor olun ister sadece harika yemek ve içeceklerin tadını çıkarmak isteyin, buradayız.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
@@ -342,7 +341,7 @@ export default function ContactPage() {
               variant="secondary"
               className="bg-accent text-accent-foreground hover:bg-accent/90"
             >
-              <a href="/reservation">Make a Reservation</a>
+              <a href="/reservation">Rezervasyon Yap</a>
             </Button>
             <Button
               asChild
@@ -350,7 +349,7 @@ export default function ContactPage() {
               variant="outline"
               className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary bg-transparent"
             >
-              <a href="/menu">View Our Menu</a>
+              <a href="/menu">Menümüzü Görüntüle</a>
             </Button>
           </div>
         </div>

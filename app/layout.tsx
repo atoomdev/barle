@@ -7,30 +7,30 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Suspense } from "react"
 import "./globals.css"
-import"./public"
+
 
 
 export const metadata: Metadata = {
-  title: "Barle Pub - Premium Dining & Entertainment Experience",
+  title: "Barle Kitchen & Pub",
   description:
-    "Experience the perfect blend of traditional pub atmosphere with modern culinary excellence at Barle Pub. Great food, craft drinks, and memorable moments await.",
-    icons: {
-  icon: "/favicon.ico",
+    "Barle Kitchen & Pub’da geleneksel pub atmosferini, modern mutfak sanatının incelikleriyle buluşturun. Lezzetli yemekler, özel el yapımı içecekler ve unutulmaz anılar sizi bekliyor.",
+  icons: {
+    icon: "/favicon.ico",
   },
-  keywords: "pub, restaurant, dining, drinks, cocktails, events, reservation, premium dining",
-  authors: [{ name: "Barle Pub" }],
-  creator: "Barle Pub",
-  publisher: "Barle Pub",
+  keywords: "pub, restoran, yemek, içecekler, kokteyller, etkinlikler, rezervasyon, premium yemek",
+  authors: [{ name: "Barle Kitchen & Pub" }],
+  creator: "Barle Kitchen & Pub",
+  publisher: "Barle Kitchen & Pub",
   openGraph: {
-    title: "Barle Pub - Premium Dining & Entertainment",
-    description: "Experience exceptional dining and entertainment at Barle Pub",
+    title: "Barle Kitchen & Pub",
+    description: "Barle Kitchen & Pub’da eşsiz yemek ve eğlence deneyimini yaşayın",
     type: "website",
-    locale: "en_US",
+    locale: "tr_TR",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Barle Pub - Premium Dining & Entertainment",
-    description: "Experience exceptional dining and entertainment at Barle Pub",
+    title: "Barle Kitchen & Pub",
+    description: "Barle Pub’da eşsiz yemek ve eğlence deneyimini yaşayın",
   },
   generator: "v0.app",
 }

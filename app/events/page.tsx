@@ -17,11 +17,11 @@ export default function EventsPage() {
       date: "December 31, 2024",
       time: "8:00 PM - 2:00 AM",
       image: "/placeholder.svg?height=300&width=500&text=New+Years+Eve+Gala",
-      description: "Ring in the new year with an elegant evening of fine dining, live jazz, and champagne toasts.",
-      price: "$125 per person",
-      category: "Special Event",
+      description: "Yeni yılı şık bir akşam yemeği, canlı caz ve şampanya kadehleriyle karşılayın.",
+      price: "$125 kişi başı",
+      category: "Özel Etkinlik",
       featured: true,
-      capacity: "Limited seating available",
+      capacity: "Sınırlı oturma kapasitesi mevcut",
     },
     {
       id: 2,
@@ -29,11 +29,11 @@ export default function EventsPage() {
       date: "January 15, 2025",
       time: "6:30 PM - 9:00 PM",
       image: "/placeholder.svg?height=300&width=500&text=Wine+Tasting",
-      description: "Explore exceptional wines from renowned vineyards paired with artisanal cheese selections.",
-      price: "$65 per person",
-      category: "Wine Event",
+      description: "Ünlü bağlardan seçkin şarapları, el yapımı peynirlerle eşleştirerek keşfedin.",
+      price: "$65 kişi başı",
+      category: "Şarap Etkinliği",
       featured: true,
-      capacity: "20 guests maximum",
+      capacity: "Maksimum 20 misafir",
     },
   ]
 
@@ -41,60 +41,60 @@ export default function EventsPage() {
     {
       id: 3,
       title: "Jazz Night with The Blue Notes",
-      date: "Every Friday",
+      date: "Her Cuma",
       time: "8:00 PM - 11:00 PM",
       icon: <Music className="h-6 w-6 text-accent" />,
-      description: "Enjoy smooth jazz performances while savoring our signature cocktails.",
+      description: "İmza kokteyllerimizi yudumlarken yumuşak caz performanslarının keyfini çıkarın.",
       recurring: true,
     },
     {
       id: 4,
       title: "Chef's Table Experience",
-      date: "First Saturday of each month",
+      date: "Her ayın ilk Cumartesi",
       time: "7:00 PM - 10:00 PM",
       icon: <ChefHat className="h-6 w-6 text-accent" />,
-      description: "An intimate dining experience with our head chef featuring a 7-course tasting menu.",
+      description: "Baş aşçımızla 7 çeşit tadım menüsü sunulan samimi bir yemek deneyimi.",
       recurring: true,
-      price: "$95 per person",
+      price: "$95 kişi başı",
     },
     {
       id: 5,
       title: "Trivia Night",
-      date: "Every Wednesday",
+      date: "Her Çarşamba",
       time: "7:00 PM - 9:00 PM",
       icon: <Users className="h-6 w-6 text-accent" />,
-      description: "Test your knowledge and win prizes in our weekly trivia competition.",
+      description: "Bilginizi test edin ve haftalık bilgi yarışmamızda ödüller kazanın.",
       recurring: true,
     },
     {
       id: 6,
       title: "Sunday Brunch & Live Acoustic",
-      date: "Every Sunday",
+      date: "Her Pazar",
       time: "10:00 AM - 3:00 PM",
       icon: <Music className="h-6 w-6 text-accent" />,
-      description: "Relaxing acoustic performances complement our weekend brunch menu.",
+      description: "Hafta sonu brunch menümüzü tamamlayan rahatlatıcı akustik performanslar.",
       recurring: true,
     },
   ]
 
   const monthlyEvents = {
     december: [
-      { date: "Dec 6", event: "Wine Pairing Dinner", time: "7:00 PM" },
-      { date: "Dec 13", event: "Holiday Jazz Night", time: "8:00 PM" },
-      { date: "Dec 20", event: "Christmas Celebration", time: "6:00 PM" },
-      { date: "Dec 31", event: "New Year's Eve Gala", time: "8:00 PM", featured: true },
+      { date: "Dec 6", event: "Şarap Eşleştirme Yemeği", time: "7:00 PM" },
+      { date: "Dec 13", event: "Tatil Caz Gecesi", time: "8:00 PM" },
+      { date: "Dec 20", event: "Noel Kutlaması", time: "6:00 PM" },
+      { date: "Dec 31", event: "Yeni Yıl Gala Gecesi", time: "8:00 PM", featured: true },
     ],
     january: [
-      { date: "Jan 3", event: "New Year Recovery Brunch", time: "10:00 AM" },
-      { date: "Jan 10", event: "Burns Night Celebration", time: "7:00 PM" },
-      { date: "Jan 15", event: "Wine Tasting Evening", time: "6:30 PM", featured: true },
-      { date: "Jan 24", event: "Winter Comfort Food Night", time: "6:00 PM" },
+      { date: "Jan 3", event: "Yeni Yıl İyileşme Brunch'ı", time: "10:00 AM" },
+      { date: "Jan 10", event: "Burns Gecesi Kutlaması", time: "7:00 PM" },
+      { date: "Jan 15", event: "Şarap Tadım Akşamı", time: "6:30 PM", featured: true },
+      { date: "Jan 24", event: "Kış Konfor Yemeği Gecesi", time: "6:00 PM" },
     ],
     february: [
-      { date: "Feb 7", event: "Valentine's Day Preview", time: "7:00 PM" },
-      { date: "Feb 14", event: "Valentine's Day Special", time: "6:00 PM", featured: true },
-      { date: "Feb 21", event: "Whiskey Tasting", time: "7:30 PM" },
-      { date: "Feb 28", event: "Leap Year Celebration", time: "8:00 PM" },
+      { date: "Feb 7", event: "Sevgililer Günü Önizlemesi", time: "7:00 PM" },
+      { date: "Feb 14", event: "Sevgililer Günü Özel", time: "6:00 PM", featured: true },
+      { date: "Feb 21", event: "Viski Tadımı", time: "7:30 PM" },
+      { date: "Feb 28", event: "Artık Yıl Kutlaması", time: "8:00 PM" },
     ],
   }
 
@@ -104,13 +104,12 @@ export default function EventsPage() {
       <section className="relative py-20 bg-gradient-to-br from-primary/10 via-background to-accent/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <Badge className="mb-4 bg-accent text-accent-foreground animate-fade-in-up">Events & Entertainment</Badge>
+            <Badge className="mb-4 bg-accent text-accent-foreground animate-fade-in-up">Etkinlikler ve Eğlence</Badge>
             <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6 animate-fade-in-up text-balance">
-              Unforgettable Experiences
+              Unutulmaz Deneyimler
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-fade-in-up text-pretty">
-              From intimate wine tastings to lively jazz nights, discover the events that make Barle Pub a destination
-              for memorable experiences.
+              Samimi şarap tadımlarından canlı caz gecelerine, Barle Pub'ı unutulmaz deneyimler için bir destinasyon yapan etkinlikleri keşfedin.
             </p>
           </div>
         </div>
@@ -120,8 +119,8 @@ export default function EventsPage() {
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-primary mb-4">Featured Events</h2>
-            <p className="text-xl text-muted-foreground">Don't miss these special occasions</p>
+            <h2 className="text-4xl font-bold text-primary mb-4">Öne Çıkan Etkinlikler</h2>
+            <p className="text-xl text-muted-foreground">Bu özel etkinlikleri kaçırmayın</p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -131,7 +130,7 @@ export default function EventsPage() {
                   <img src={event.image || "/placeholder.svg"} alt={event.title} className="w-full h-64 object-cover" />
                   <Badge className="absolute top-4 right-4 bg-primary text-primary-foreground">
                     <Star className="h-3 w-3 mr-1" />
-                    Featured
+                    Öne Çıkan
                   </Badge>
                 </div>
                 <CardHeader>
@@ -156,7 +155,7 @@ export default function EventsPage() {
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-muted-foreground">{event.capacity}</span>
                     <Button asChild className="bg-primary hover:bg-primary/90">
-                      <Link href="/reservation">Reserve Now</Link>
+                      <Link href="/reservation">Şimdi Rezervasyon Yap</Link>
                     </Button>
                   </div>
                 </CardContent>
@@ -170,8 +169,8 @@ export default function EventsPage() {
       <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-primary mb-4">Regular Events</h2>
-            <p className="text-xl text-muted-foreground">Weekly entertainment you can count on</p>
+            <h2 className="text-4xl font-bold text-primary mb-4">Düzenli Etkinlikler</h2>
+            <p className="text-xl text-muted-foreground">Haftalık eğlencelerimizle keyifli vakit geçirin</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -180,7 +179,7 @@ export default function EventsPage() {
                 <CardHeader>
                   <div className="flex items-center space-x-3 mb-2">
                     {event.icon}
-                    <Badge variant="secondary">Regular Event</Badge>
+                    <Badge variant="secondary">Düzenli Etkinlik</Badge>
                   </div>
                   <CardTitle className="text-xl">{event.title}</CardTitle>
                   <div className="flex items-center space-x-4 text-muted-foreground">
@@ -199,7 +198,7 @@ export default function EventsPage() {
                   <div className="flex items-center justify-between">
                     {event.price && <span className="font-medium text-primary">{event.price}</span>}
                     <Button variant="outline" asChild>
-                      <Link href="/reservation">Book Table</Link>
+                      <Link href="/reservation">Masa Ayırt</Link>
                     </Button>
                   </div>
                 </CardContent>
@@ -213,8 +212,8 @@ export default function EventsPage() {
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-primary mb-4">Event Calendar</h2>
-            <p className="text-xl text-muted-foreground">Plan your visits around our special events</p>
+            <h2 className="text-4xl font-bold text-primary mb-4">Etkinlik Takvimi</h2>
+            <p className="text-xl text-muted-foreground">Özel etkinliklerimize göre ziyaretlerinizi planlayın</p>
           </div>
 
           <div className="max-w-4xl mx-auto">
@@ -256,7 +255,7 @@ export default function EventsPage() {
                       {event.featured && (
                         <Badge className="bg-accent text-accent-foreground">
                           <Star className="h-3 w-3 mr-1" />
-                          Featured
+                          Öne Çıkan
                         </Badge>
                       )}
                     </div>
@@ -271,10 +270,9 @@ export default function EventsPage() {
       {/* Call to Action */}
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold mb-6">Join Us for Your Next Event</h2>
+          <h2 className="text-4xl font-bold mb-6">Bir Sonraki Etkinliğiniz İçin Bize Katılın</h2>
           <p className="text-xl mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
-            Whether it's a special celebration or a regular night out, Barle Pub offers the perfect atmosphere for
-            memorable experiences.
+            İster özel bir kutlama ister düzenli bir gece dışarı çıkma olsun, Barle Pub unutulmaz deneyimler için mükemmel bir atmosfer sunar.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
@@ -283,7 +281,7 @@ export default function EventsPage() {
               variant="secondary"
               className="bg-accent text-accent-foreground hover:bg-accent/90"
             >
-              <Link href="/reservation">Reserve Your Table</Link>
+              <Link href="/reservation">Masanızı Ayırtın</Link>
             </Button>
             <Button
               asChild
@@ -291,7 +289,7 @@ export default function EventsPage() {
               variant="outline"
               className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary bg-transparent"
             >
-              <Link href="/contact">Private Event Inquiry</Link>
+              <Link href="/contact">Özel Etkinlik Sorgusu</Link>
             </Button>
           </div>
         </div>
