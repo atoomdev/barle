@@ -37,7 +37,11 @@ export function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 group">
             <div className="text-2xl font-bold text-primary transition-all duration-300 group-hover:scale-105">
-              Barle Pub
+             <img 
+              src="/logo.webp"   // logonuzu public klasörüne koyun
+              alt="Barle Pub Logo"
+              className="h-12 w-auto" // yüksekliği 48px, orantılı genişlik
+             />
             </div>
           </Link>
 
