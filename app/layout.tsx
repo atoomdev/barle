@@ -7,12 +7,16 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Suspense } from "react"
 import "./globals.css"
+import"./public"
 
 
 export const metadata: Metadata = {
   title: "Barle Pub - Premium Dining & Entertainment Experience",
   description:
     "Experience the perfect blend of traditional pub atmosphere with modern culinary excellence at Barle Pub. Great food, craft drinks, and memorable moments await.",
+    icons: {
+  icon: "/favicon.ico",
+  },
   keywords: "pub, restaurant, dining, drinks, cocktails, events, reservation, premium dining",
   authors: [{ name: "Barle Pub" }],
   creator: "Barle Pub",
@@ -30,6 +34,8 @@ export const metadata: Metadata = {
   },
   generator: "v0.app",
 }
+
+
 
 export default function RootLayout({
   children,
