@@ -80,7 +80,7 @@ export function Footer() {
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
           <p className="text-primary-foreground/60">
-            © 2025 Barle Pub. Tüm hakları saklıdır. | Sizin için için özenle tasarlandı.
+            © 2025 Barle Pub. Tüm hakları saklıdır. Sizin için için özenle tasarlandı.
           </p>
         </div>
       </div>
