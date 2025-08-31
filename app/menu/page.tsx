@@ -9,23 +9,23 @@ export default function MenuPage() {
   const menuCategories = {
     appetizers: [
       {
-        name: "Truffle Arancini",
-        description: "Crispy risotto balls with wild mushrooms, truffle oil, and parmesan",
+        name: "Trüf Arancini",
+        description: "Yabani mantar, trüf yağı ve parmesan ile çıtır risotto topları",
         price: "$16",
         image: "/placeholder.svg?height=200&width=300&text=Truffle+Arancini",
-        badges: ["Vegetarian"],
+        badges: ["Vejetaryen"],
         popular: true,
       },
       {
-        name: "Seared Scallops",
-        description: "Pan-seared scallops with cauliflower purée and pancetta crisps",
+        name: "Izgara Deniz Tarağı",
+        description: "Karnabahar püresi ve pancetta cipsi ile tavada kızartılmış deniz tarakları",
         price: "$22",
         image: "/placeholder.svg?height=200&width=300&text=Seared+Scallops",
-        badges: ["Gluten-Free"],
+        badges: ["Glutensiz"],
       },
       {
-        name: "Charcuterie Board",
-        description: "Selection of artisanal meats, cheeses, and accompaniments",
+        name: "Şarküteri Tabağı",
+        description: "El yapımı etler, peynirler ve eşlikçilerden oluşan bir seçim",
         price: "$28",
         image: "/placeholder.svg?height=200&width=300&text=Charcuterie+Board",
         badges: [],
@@ -33,55 +33,55 @@ export default function MenuPage() {
     ],
     mains: [
       {
-        name: "Dry-Aged Ribeye",
-        description: "28-day aged ribeye with roasted bone marrow and seasonal vegetables",
+        name: "Kuru Dinlendirilmiş Antrikot",
+        description: "28 gün dinlendirilmiş antrikot, kavrulmuş kemik iliği ve mevsim sebzeleri ile",
         price: "$48",
         image: "/placeholder.svg?height=200&width=300&text=Ribeye+Steak",
-        badges: ["Chef's Special"],
+        badges: ["Şefin Özel"],
         popular: true,
       },
       {
-        name: "Pan-Roasted Salmon",
-        description: "Atlantic salmon with lemon herb crust and quinoa pilaf",
+        name: "Tavada Kızartılmış Somon",
+        description: "Limon otlu kabuk ve kinoa pilavı ile Atlantik somonu",
         price: "$32",
         image: "/placeholder.svg?height=200&width=300&text=Salmon+Dish",
-        badges: ["Healthy Choice"],
+        badges: ["Sağlıklı Seçim"],
       },
       {
         name: "Barle Burger",
-        description: "Wagyu beef patty with aged cheddar, caramelized onions, and truffle fries",
+        description: "Wagyu dana köftesi, yaşlandırılmış çedar, karamelize soğan ve trüf patates kızartması ile",
         price: "$24",
         image: "/placeholder.svg?height=200&width=300&text=Gourmet+Burger",
-        badges: ["Signature"],
+        badges: ["İmza"],
         popular: true,
       },
       {
-        name: "Wild Mushroom Risotto",
-        description: "Creamy arborio rice with seasonal mushrooms and aged parmesan",
+        name: "Yabani Mantar Risotto",
+        description: "Mevsim mantarları ve yaşlandırılmış parmesan ile kremalı arborio pirinci",
         price: "$26",
         image: "/placeholder.svg?height=200&width=300&text=Mushroom+Risotto",
-        badges: ["Vegetarian"],
+        badges: ["Vejetaryen"],
       },
     ],
     drinks: [
       {
         name: "Barle Old Fashioned",
-        description: "Premium bourbon, house-made bitters, orange peel",
+        description: "Premium bourbon, ev yapımı bitters, portakal kabuğu",
         price: "$16",
         image: "/placeholder.svg?height=200&width=300&text=Old+Fashioned",
-        badges: ["Signature"],
+        badges: ["İmza"],
         popular: true,
       },
       {
-        name: "Craft Beer Selection",
-        description: "Rotating selection of local and international craft beers",
+        name: "Craft Bira Seçimi",
+        description: "Yerel ve uluslararası craft biraların dönen seçimi",
         price: "$8-14",
         image: "/placeholder.svg?height=200&width=300&text=Craft+Beer",
-        badges: ["Local"],
+        badges: ["Yerel"],
       },
       {
-        name: "Wine by the Glass",
-        description: "Curated selection of premium wines from around the world",
+        name: "Kadeh Şarap",
+        description: "Dünyanın dört bir yanından seçilmiş premium şaraplar",
         price: "$12-22",
         image: "/placeholder.svg?height=200&width=300&text=Wine+Glass",
         badges: [],
@@ -89,31 +89,31 @@ export default function MenuPage() {
     ],
     desserts: [
       {
-        name: "Chocolate Lava Cake",
-        description: "Warm chocolate cake with molten center and vanilla ice cream",
+        name: "Çikolatalı Lava Kek",
+        description: "Sıcak çikolatalı kek, akışkan merkez ve vanilyalı dondurma ile",
         price: "$12",
         image: "/placeholder.svg?height=200&width=300&text=Chocolate+Cake",
         badges: [],
         popular: true,
       },
       {
-        name: "Seasonal Fruit Tart",
-        description: "Fresh seasonal fruits with pastry cream and almond crust",
+        name: "Mevsim Meyveli Tart",
+        description: "Taze mevsim meyveleri, pastacı kreması ve bademli taban ile",
         price: "$10",
         image: "/placeholder.svg?height=200&width=300&text=Fruit+Tart",
-        badges: ["Seasonal"],
+        badges: ["Mevsimlik"],
       },
     ],
   }
 
   const getBadgeVariant = (badge: string) => {
     switch (badge) {
-      case "Signature":
-      case "Chef's Special":
+      case "İmza":
+      case "Şefin Özel":
         return "default"
-      case "Vegetarian":
+      case "Vejetaryen":
         return "secondary"
-      case "Healthy Choice":
+      case "Sağlıklı Seçim":
         return "outline"
       default:
         return "outline"
@@ -122,12 +122,12 @@ export default function MenuPage() {
 
   const getBadgeIcon = (badge: string) => {
     switch (badge) {
-      case "Vegetarian":
+      case "Vejetaryen":
         return <Leaf className="h-3 w-3" />
-      case "Chef's Special":
-      case "Signature":
+      case "Şefin Özel":
+      case "İmza":
         return <Star className="h-3 w-3" />
-      case "Spicy":
+      case "Baharatlı":
         return <Flame className="h-3 w-3" />
       default:
         return null
@@ -145,7 +145,7 @@ export default function MenuPage() {
               {item.popular && (
                 <Badge className="absolute top-2 right-2 bg-accent text-accent-foreground">
                   <Star className="h-3 w-3 mr-1" />
-                  Popular
+                  Popüler
                 </Badge>
               )}
             </div>
@@ -176,107 +176,106 @@ export default function MenuPage() {
 
   return (
     <div className="pt-16">
-      {/* Hero Section */}
+      {/* Kahraman Bölümü */}
       <section className="relative py-20 bg-gradient-to-br from-primary/10 via-background to-accent/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <Badge className="mb-4 bg-accent text-accent-foreground animate-fade-in-up">Our Menu</Badge>
+            <Badge className="mb-4 bg-accent text-accent-foreground animate-fade-in-up">Menümüz</Badge>
             <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6 animate-fade-in-up text-balance">
-              Culinary Excellence
+              Mutfak Mükemmelliği
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-fade-in-up text-pretty">
-              Discover our carefully crafted menu featuring the finest ingredients, innovative techniques, and flavors
-              that celebrate both tradition and creativity.
+              En kaliteli malzemeler, yenilikçi teknikler ve hem geleneği hem de yaratıcılığı kutlayan lezzetlerle özenle hazırlanmış menümüzü keşfedin.
             </p>
             <div className="mt-8">
               <Button variant="outline" className="animate-fade-in-up bg-transparent">
                 <Download className="h-4 w-4 mr-2" />
-                Download Full Menu (PDF)
+                Tüm Menüyü İndir (PDF)
               </Button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Menu Content */}
+      {/* Menü İçeriği */}
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Tabs defaultValue="appetizers" className="w-full">
             <TabsList className="grid w-full grid-cols-2 lg:grid-cols-4 mb-12">
               <TabsTrigger value="appetizers" className="text-sm">
-                Appetizers
+                Başlangıçlar
               </TabsTrigger>
               <TabsTrigger value="mains" className="text-sm">
-                Main Courses
+                Ana Yemekler
               </TabsTrigger>
               <TabsTrigger value="drinks" className="text-sm">
-                Beverages
+                İçecekler
               </TabsTrigger>
               <TabsTrigger value="desserts" className="text-sm">
-                Desserts
+                Tatlılar
               </TabsTrigger>
             </TabsList>
 
             <TabsContent value="appetizers" className="space-y-8">
-              <MenuSection title="Appetizers & Small Plates" items={menuCategories.appetizers} />
+              <MenuSection title="Başlangıçlar ve Küçük Tabaklar" items={menuCategories.appetizers} />
             </TabsContent>
 
             <TabsContent value="mains" className="space-y-8">
-              <MenuSection title="Main Courses" items={menuCategories.mains} />
+              <MenuSection title="Ana Yemekler" items={menuCategories.mains} />
             </TabsContent>
 
             <TabsContent value="drinks" className="space-y-8">
-              <MenuSection title="Beverages & Cocktails" items={menuCategories.drinks} />
+              <MenuSection title="İçecekler ve Kokteyller" items={menuCategories.drinks} />
             </TabsContent>
 
             <TabsContent value="desserts" className="space-y-8">
-              <MenuSection title="Desserts & Sweet Treats" items={menuCategories.desserts} />
+              <MenuSection title="Tatlılar ve Tatlı İkramlar" items={menuCategories.desserts} />
             </TabsContent>
           </Tabs>
         </div>
       </section>
 
-      {/* Special Offers */}
+      {/* Özel Teklifler */}
       <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-primary mb-4">Special Offers</h2>
-            <p className="text-xl text-muted-foreground">Don't miss these limited-time experiences</p>
+            <h2 className="text-4xl font-bold text-primary mb-4">Özel Teklifler</h2>
+            <p className="text-xl text-muted-foreground">Bu sınırlı süreli deneyimleri kaçırmayın</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Card className="hover:shadow-lg transition-shadow duration-300">
               <CardHeader>
-                <Badge className="w-fit bg-primary text-primary-foreground">Happy Hour</Badge>
-                <CardTitle className="text-2xl">Weekday Happy Hour</CardTitle>
-                <CardDescription className="text-base">Monday - Thursday, 4:00 PM - 6:00 PM</CardDescription>
+                <Badge className="w-fit bg-primary text-primary-foreground">Mutlu Saat</Badge>
+                <CardTitle className="text-2xl">Hafta İçi Mutlu Saat</CardTitle>
+                <CardDescription className="text-base">Pazartesi - Perşembe, 16:00 - 18:00</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  Enjoy 25% off all appetizers and craft cocktails during our weekday happy hour.
+                  Hafta içi mutlu saatimizde tüm başlangıçlar ve el yapımı kokteyllerde %25 indirimden yararlanın.
                 </p>
                 <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• All appetizers 25% off</li>
-                  <li>• Craft cocktails 25% off</li>
-                  <li>• Wine by the glass starting at $9</li>
+                  <li>• Tüm başlangıçlarda %25 indirim</li>
+                  <li>• El yapımı kokteyllerde %25 indirim</li>
+                  <li>• Kadeh şaraplar $9'dan başlayan fiyatlarla</li>
                 </ul>
               </CardContent>
             </Card>
 
             <Card className="hover:shadow-lg transition-shadow duration-300">
               <CardHeader>
-                <Badge className="w-fit bg-accent text-accent-foreground">Weekend Special</Badge>
-                <CardTitle className="text-2xl">Sunday Brunch</CardTitle>
-                <CardDescription className="text-base">Sundays, 10:00 AM - 3:00 PM</CardDescription>
+                <Badge className="w-fit bg-accent text-accent-foreground">Hafta Sonu Özel</Badge>
+                <CardTitle className="text-2xl">Pazar Brunch'ı</CardTitle>
+                <CardDescription className="text-base">Pazar günleri, 10:00 - 15:00</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  Indulge in our weekend brunch featuring bottomless mimosas and signature dishes.
+                  Sınırsız mimoza ve imza yemekler içeren hafta sonu brunch'ımızın keyfini çıkarın.
                 </p>
                 <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• Bottomless mimosas $18</li>
-                  <li>• Eggs Benedict variations</li>
-                  <li>• Fresh pastries and coffee</li>
+                  <li>• Sınırsız mimoza $18</li>
+                  <li>• Eggs Benedict çeşitleri</li>
+                  <li>• Taze hamur işleri ve kahve</li>
                 </ul>
               </CardContent>
             </Card>
@@ -284,12 +283,12 @@ export default function MenuPage() {
         </div>
       </section>
 
-      {/* Call to Action */}
+      {/* Eylem Çağrısı */}
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold mb-6">Ready to Experience Our Menu?</h2>
+          <h2 className="text-4xl font-bold mb-6">Menümüzü Denemeye Hazır mısınız?</h2>
           <p className="text-xl mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
-            Reserve your table today and let our culinary team create an unforgettable dining experience for you.
+            Bugün masanızı ayırtın ve mutfak ekibimizin sizin için unutulmaz bir yemek deneyimi yaratmasına izin verin.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
@@ -298,7 +297,7 @@ export default function MenuPage() {
               variant="secondary"
               className="bg-accent text-accent-foreground hover:bg-accent/90"
             >
-              <Link href="/reservation">Make a Reservation</Link>
+              <Link href="/reservation">Rezervasyon Yap</Link>
             </Button>
             <Button
               asChild
@@ -306,7 +305,7 @@ export default function MenuPage() {
               variant="outline"
               className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary bg-transparent"
             >
-              <Link href="/contact">Contact Us</Link>
+              <Link href="/contact">Bize Ulaşın</Link>
             </Button>
           </div>
         </div>
