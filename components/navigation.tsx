@@ -18,12 +18,12 @@ export function Navigation() {
   }, [])
 
   const navItems = [
-    { href: "/", label: "Home" },
-    { href: "/about", label: "About Us" },
-    { href: "/menu", label: "Menu" },
-    { href: "/events", label: "Events" },
-    { href: "/reservation", label: "Reservation" },
-    { href: "/contact", label: "Contact" },
+    { href: "/", label: "Ana Sayfa" },
+    { href: "/about", label: "Hakkımızda" },
+    { href: "/menu", label: "Menü" },
+    { href: "/events", label: "Etkinlikler" },
+    { href: "/reservation", label: "Rezervasyon" },
+    { href: "/contact", label: "İletişim" },
   ]
 
   return (
@@ -40,7 +40,7 @@ export function Navigation() {
              <img 
               src="/logo.webp"   // logonuzu public klasörüne koyun
               alt="Barle Pub Logo"
-              className="h-12 w-auto" // yüksekliği 48px, orantılı genişlik
+              className="h-17 w-auto" // yüksekliği 48px, orantılı genişlik
              />
             </div>
           </Link>
@@ -63,7 +63,7 @@ export function Navigation() {
               className="bg-primary hover:bg-primary/90 text-primary-foreground btn-primary hover-lift animate-fade-in-up"
               style={{ animationDelay: `${navItems.length * 0.1}s` }}
             >
-              <Link href="/reservation">Book a Table</Link>
+              <Link href="/reservation">Rezervasyon Yap</Link>
             </Button>
           </div>
 
@@ -108,7 +108,7 @@ export function Navigation() {
             <div className="px-3 py-2 animate-slide-in-right" style={{ animationDelay: `${navItems.length * 0.05}s` }}>
               <Button asChild className="w-full bg-primary hover:bg-primary/90 text-primary-foreground btn-primary">
                 <Link href="/reservation" onClick={() => setIsOpen(false)}>
-                  Book a Table
+                  Rezervasyon Yap
                 </Link>
               </Button>
             </div>
