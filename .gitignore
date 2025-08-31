@@ -5,10 +5,12 @@
 
 # next.js
 /.next/
+/.vscode/
 /out/
 
 # production
 /build
+
 
 # debug
 npm-debug.log*
