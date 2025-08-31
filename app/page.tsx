@@ -23,7 +23,7 @@ export default function HomePage() {
         {/* Kahraman İçeriği */}
         {/* Logo */}
         <img 
-          src="/barle-logo.png"   // logoyu public klasörüne koyun
+          src="/logo.webp"   // logoyu public klasörüne koyun
           alt="Barle Pub Logo"
           className="h-20 mb-4"   // yüksekliği 80px, altta boşluk bırakır
         />
