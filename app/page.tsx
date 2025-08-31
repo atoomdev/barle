@@ -21,6 +21,12 @@ export default function HomePage() {
         </div>
 
         {/* Kahraman İçeriği */}
+        {/* Logo */}
+        <img 
+          src="/barle-logo.png"   // logoyu public klasörüne koyun
+          alt="Barle Pub Logo"
+          className="h-20 mb-4"   // yüksekliği 80px, altta boşluk bırakır
+        />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <Badge className="mb-6 bg-accent text-accent-foreground animate-fade-in-up hover-scale">
             Premium Yemek Deneyimi
