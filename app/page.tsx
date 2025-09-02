@@ -26,7 +26,7 @@ export default function HomePage() {
         <img 
         src="/logo.webp"   // logoyu public klasörüne koyun
         alt="Barle Pub Logo"
-        className="h-20 mb-4 mx-auto"   // yüksekliği 80px, altta boşluk bırakır, ortalanır
+        className="h-25 mb-4 mx-auto"   // yüksekliği 80px, altta boşluk bırakır, ortalanır
         />
         <div className="text-center text-white max-w-4xl mx-auto">
         <Badge className="mb-6 bg-accent text-accent-foreground animate-fade-in-up hover-scale">
