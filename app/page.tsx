@@ -36,7 +36,7 @@ export default function HomePage() {
           <span className="text-accent animate-parallax-float inline-block">Barle Pub</span>'a Hoş Geldiniz
         </h1>
         <p className="text-responsive-2xl mb-8 text-white/90 animate-fade-in-up-delay-2 max-w-2xl mx-auto text-pretty">
-          Gelenekle modern mükemmeliyetin buluştuğu yer. Şık atmosferimizde eşsiz mutfak, el yapımı içecekler ve unutulmaz anlar yaşayın.
+          Şehrin kalbinde lezzet ve sohbetin buluşma noktası.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up-delay-3">
           <Button
