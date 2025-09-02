@@ -87,11 +87,11 @@ export default function ContactPage() {
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground leading-relaxed">
-                      123 Ana Cadde
+                      İncek Şehit Savcı Mehmet Selim Kiraz Blv No:406/37
                       <br />
-                      Şehir Merkezi Bölgesi
+                      Vista AVM, Kızılcaşar Mahallesi
                       <br />
-                      Şehir, Eyalet 12345
+                      Gölbaşı/Ankara
                     </p>
                   </CardContent>
                 </Card>
@@ -260,12 +260,12 @@ export default function ContactPage() {
                   <h3 className="text-xl font-semibold text-primary">Etkileşimli Harita</h3>
                   <p className="text-muted-foreground">Google Haritalar entegrasyonu burada uygulanacaktır</p>
                   <p className="text-sm text-muted-foreground mt-2">
-                    123 Ana Cadde, Şehir Merkezi Bölgesi, Şehir, Eyalet 12345
+                    İncek Vista AVM, Kızılcaşar, Incek Şht. Savcı Mehmet Selim Kiraz Blv D:406/37, 06770 Gölbaşı/Ankara
                   </p>
                 </div>
                 <Button variant="outline" asChild>
                   <a
-                    href="https://maps.google.com/?q=123+Main+Street,+City,+State"
+                    href="https://www.google.com/maps/place/Barle+Kitchen+%26+Pub/@39.8299369,32.7353361,17z/data=!4m17!1m10!3m9!1s0x14d341aff0532d65:0x3b44033391237992!2sBarle+Kitchen+%26+Pub!8m2!3d39.8299369!4d32.7353361!10e5!14m1!1BCgIgARICGAI!16s%2Fg%2F11xnw03kv_!3m5!1s0x14d341aff0532d65:0x3b44033391237992!8m2!3d39.8299369!4d32.7353361!16s%2Fg%2F11xnw03kv_?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
