@@ -10,52 +10,53 @@ export default function HomePage() {
     <div className="pt-16">
       {/* Kahraman Bölümü */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Arka Plan Görseli */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat gpu-accelerated"
-          style={{
-            backgroundImage: `url('/elegant-pub-interior-with-warm-lighting-wooden-tab.png')`,
-          }}
-        >
-          <div className="absolute inset-0 bg-black/50"></div>
-        </div>
+      {/* Arka Plan Görseli */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat gpu-accelerated"
+        style={{
+        backgroundImage: `url('/elegant-pub-interior-with-warm-lighting-wooden-tab.png')`,
+        }}
+      >
+        <div className="absolute inset-0 bg-black/50"></div>
+      </div>
 
-        {/* Kahraman İçeriği */}
-        {/* Logo */}
+      {/* Kahraman İçeriği */}
+      {/* Logo */}
+      <div className="relative z-10 text-center w-full px-4">
         <img 
-          src="/logo.webp"   // logoyu public klasörüne koyun
-          alt="Barle Pub Logo"
-          className="h-20 mb-4"   // yüksekliği 80px, altta boşluk bırakır
+        src="/logo.webp"   // logoyu public klasörüne koyun
+        alt="Barle Pub Logo"
+        className="h-20 mb-4 mx-auto"   // yüksekliği 80px, altta boşluk bırakır, ortalanır
         />
-        <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <Badge className="mb-6 bg-accent text-accent-foreground animate-fade-in-up hover-scale">
-            Premium Yemek Deneyimi
-          </Badge>
-          <h1 className="text-responsive-6xl font-bold mb-6 animate-fade-in-up-delay-1 text-balance">
-            <span className="text-accent animate-parallax-float inline-block">Barle Pub</span>'a Hoş Geldiniz
-          </h1>
-          <p className="text-responsive-2xl mb-8 text-white/90 animate-fade-in-up-delay-2 max-w-2xl mx-auto text-pretty">
-            Gelenekle modern mükemmeliyetin buluştuğu yer. Şık atmosferimizde eşsiz mutfak, el yapımı içecekler ve unutulmaz anlar yaşayın.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up-delay-3">
-            <Button
-              asChild
-              size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground btn-primary hover-lift"
-            >
-              <Link href="/menu">Menümüzü Keşfedin</Link>
-            </Button>
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="border-white text-white hover:bg-white hover:text-primary hover-lift bg-transparent"
-            >
-              <Link href="/reservation">Masanızı Ayırtın</Link>
-            </Button>
-          </div>
+        <div className="text-center text-white max-w-4xl mx-auto">
+        <Badge className="mb-6 bg-accent text-accent-foreground animate-fade-in-up hover-scale">
+          Premium Yemek Deneyimi
+        </Badge>
+        <h1 className="text-responsive-6xl font-bold mb-6 animate-fade-in-up-delay-1 text-balance">
+          <span className="text-accent animate-parallax-float inline-block">Barle Pub</span>'a Hoş Geldiniz
+        </h1>
+        <p className="text-responsive-2xl mb-8 text-white/90 animate-fade-in-up-delay-2 max-w-2xl mx-auto text-pretty">
+          Gelenekle modern mükemmeliyetin buluştuğu yer. Şık atmosferimizde eşsiz mutfak, el yapımı içecekler ve unutulmaz anlar yaşayın.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up-delay-3">
+          <Button
+          asChild
+          size="lg"
+          className="bg-primary hover:bg-primary/90 text-primary-foreground btn-primary hover-lift"
+          >
+          <Link href="/menu">Menümüzü Keşfedin</Link>
+          </Button>
+          <Button
+          asChild
+          size="lg"
+          variant="outline"
+          className="border-white text-white hover:bg-white hover:text-primary hover-lift bg-transparent"
+          >
+          <Link href="/reservation">Masanızı Ayırtın</Link>
+          </Button>
         </div>
-
+        </div>
+      </div>
         {/* Kaydırma Göstergesi */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-float">
           <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
