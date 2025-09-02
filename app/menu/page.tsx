@@ -188,10 +188,12 @@ export default function MenuPage() {
               En kaliteli malzemeler, yenilikçi teknikler ve hem geleneği hem de yaratıcılığı kutlayan lezzetlerle özenle hazırlanmış menümüzü keşfedin.
             </p>
             <div className="mt-8">
-              <Button variant="outline" className="animate-fade-in-up bg-transparent">
+            <Button variant="outline" className="animate-fade-in-up bg-transparent">
+              <Link href="/barlemenu.pdf" target="_blank" className="flex items-center">
                 <Download className="h-4 w-4 mr-2" />
                 Tüm Menüyü İndir (PDF)
-              </Button>
+              </Link>
+            </Button>
             </div>
           </div>
         </div>
