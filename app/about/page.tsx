@@ -27,7 +27,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 animate-slide-in-left">
-              <h2 className="text-3xl font-bold text-primary">Our Journey</h2>
+              <h2 className="text-3xl font-bold text-primary">Hakkımızda</h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
                 2025 yılında basit ama iddialı bir vizyonla kurulan Barle Pub, sadece bir yemek mekanı yaratma arzusundan
                 doğdu. Aşçılık mükemmeliyetinin samimi misafirperverlikle buluştuğu, her yemeğin unutulmaz bir deneyime
