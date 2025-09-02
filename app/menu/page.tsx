@@ -189,7 +189,7 @@ export default function MenuPage() {
             </p>
             <div className="mt-8">
             <Button variant="outline" className="animate-fade-in-up bg-transparent">
-              <Link href="/menu.pdf" target="_blank" className="flex items-center">
+              <Link href="/menu.pdf" target="_blank" title="Barle Kitchen & Pub Menü" className="flex items-center">
                 <Download className="h-4 w-4 mr-2" />
                 Tüm Menüyü İndir (PDF)
               </Link>
