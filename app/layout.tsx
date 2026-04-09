@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     title: "Barle Kitchen & Pub",
     description: "Barle Pub’da eşsiz yemek ve eğlence deneyimini yaşayın",
   },
-  generator: "v0.app",
+  // Removed generator field for privacy
 }
 
 
